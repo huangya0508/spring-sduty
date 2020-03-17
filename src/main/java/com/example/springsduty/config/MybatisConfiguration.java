@@ -11,7 +11,7 @@
 // * @since 2020/3/16
 // */
 //@Configuration
-//@MapperScan("com.example.springsduty.mapper")
+//@MapperScan("com.example.springsduty.dao.mapper")
 //public class MybatisConfiguration {
 //    /*
 //     * 分页插件，自动识别数据库类型

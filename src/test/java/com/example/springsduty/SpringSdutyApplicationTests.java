@@ -1,7 +1,7 @@
 package com.example.springsduty;
 
-import com.example.springsduty.mapper.UserMapper;
-import com.example.springsduty.model.User;
+import com.example.springsduty.dao.entity.User;
+import com.example.springsduty.service.IUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,12 +11,12 @@ import java.util.List;
 @SpringBootTest
 class SpringSdutyApplicationTests {
     @Autowired
-    private UserMapper userMapper;
+    private IUserService iUserService;
 
     @Test
     void contextLoads() {
-        List<User> users = userMapper.selectList(null);
-        users.forEach(System.out::println);
+        List<User> users = iUserService.list();
+        System.out.println(users.size()+"-------------------------");
     }
 
 }
