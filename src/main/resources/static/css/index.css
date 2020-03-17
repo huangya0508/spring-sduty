@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+a{
+    cursor: pointer;
+}
+.nav-top{
+    height: 90px;
+    padding: 15px 10px 20px 10px;
+    background-color: #393D49;
+}
+
+.logo{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 25px;
+}
+.logo a{
+    color: white;
+}
+.logo a:hover{
+    color: white;
+}
+.logo img{
+    height: 50px;
+    display: none;
+}
+
+.nav-top .nav{
+    float: right;
+    display: inline-block;
+}
+
+.layui-nav *{
+    font-size: 16px!important;
+}
+
+.content{
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+.content iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}

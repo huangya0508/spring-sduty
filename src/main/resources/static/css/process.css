@@ -1,0 +1,83 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {text-decoration: none;}
+a:focus {text-decoration: none;}
+.logo {
+    margin: 0;
+    padding: 10px 5px;
+    font-size: 26px;
+    height: 60px;
+}
+
+.left-sidebar {
+    text-align: center;
+    background-color: #eae6e6;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+}
+
+.left-sidebar ul li {
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #9acfea;
+}
+
+.left-sidebar ul li a {
+    display: block;
+}
+
+.left-sidebar ul li img {
+    height: 100%;
+}
+
+.left-sidebar ul li.active {
+    background-color: #2e6da4;
+}
+
+.left-sidebar ul li a {
+    color: #000000;
+}
+
+.left-sidebar ul li.active a {
+    color: #ffffff;
+}
+.panel img{
+    height: 330px;
+}
+.tab-content{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    overflow-y:auto;
+}
+.panel .panel-body.cloud-chart{
+    text-align: center;
+}
+div.file-input{
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+}
+select.form-control{
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+}

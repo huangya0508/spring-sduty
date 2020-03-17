@@ -14,7 +14,7 @@
 // * Created by huangya on 2018/4/3.
 // */
 //@Configuration
-//@MapperScan("com.example.springsduty.dao.mapper")
+//@MapperScan("com.example.springsduty.drink.service.dao.mapper")
 //public class MybatisPlusConfig implements WebMvcConfigurer {
 //
 //    @Autowired

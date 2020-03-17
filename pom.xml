@@ -62,7 +62,29 @@
             <artifactId>velocity-engine-core</artifactId>
             <version>2.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.joda/joda-money -->
+        <!--oda-Money 是一个用于表示货币金额的开源Java类库-->
+        <dependency>
+            <groupId>org.joda</groupId>
+            <artifactId>joda-money</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jadira.usertype</groupId>
+            <artifactId>usertype.core</artifactId>
+            <version>6.0.1.GA</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>2.1.7.RELEASE</version>
+        </dependency>
+
+
     </dependencies>
+
 
     <build>
         <plugins>

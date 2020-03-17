@@ -33,6 +33,9 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
+#    静态文件的位置
+  mvc:
+    static-path-pattern: static/**
 
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
@@ -40,7 +43,7 @@ mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
 #  mapper-locations: classpath:/com/example/springsduty/dao/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.example.springsduty.dao.entity
+  typeAliasesPackage: com.example.springsduty.*.dao.entity
   global-config:
     #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
     id-type: 0
@@ -66,5 +69,4 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull,oracle数据库必须配置
     jdbc-type-for-null: 'null'
-
 
